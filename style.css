@@ -18,7 +18,7 @@ div {
  	transition: color 3s;
  }
 
-div:hover{
+div:active{
 	background-color: #fff8f0;
 	color: #1A1A1A;
 }
@@ -41,4 +41,5 @@ button{
 a{
 	text-decoration: none;
 	color:white;
+
 }
