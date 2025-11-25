@@ -6,24 +6,40 @@ div {
 	width: 50%;
 	font-size: 30;
 	margin:0 auto;
-	transition: background-color 3s;
+	transition: background-color 3s ease-in-out;
 	color:white;
 	padding: 20px;
+ 	animation: demo 3s ease-in-out;
 }
  #p{
  	text-align:center;
  	font-size:35px;
  	font-family:sans-serif 'gorgia';
  	color: brown;
- 	transition: color 3s;
+ }
+ .ds{
+ 	animation: color 3s alternate;
+ 	transition:color 3s ease-in-out;
  }
 
-div:active{
-	background-color: #fff8f0;
-	color: #1A1A1A;
+@keyframes demo{
+	0%{
+		background-color:#222831;
 }
-#p:hover{
-	color:#2C2C2C;
+	100%{
+		background-color:#fff8f0;
+	}
+}
+@keyframes color{
+	0%{
+		color:#2C2C2C;
+	}
+	50%{
+		color:#222831;
+	}
+	100%{
+		color:#ffffff;
+	}
 }
 button{
 	border: none;
@@ -41,5 +57,4 @@ button{
 a{
 	text-decoration: none;
 	color:white;
-
 }
